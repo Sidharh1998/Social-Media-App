@@ -27,9 +27,28 @@ nav{
    display: flex;
    flex-flow:column ;
    gap: 0.4rem;
+   cursor: pointer;
 }
+
 
 .carditem{
     border-radius: 2rem;
     padding-bottom: 1rem;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media(max-width: 800px) {
+    .grid{
+        grid-template-columns: auto auto auto
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media(max-width: 600px) {
+    .grid{
+        grid-template-columns: auto
+    }
 }
